@@ -1,13 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 body {
+  box-sizing: border-box;
+  background-color: #010920;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10%;
+  bottom: 0;
+  margin: auto;
+  width: 360px;
+  height: 480px;
+  background: #252e42;
+  box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.rectangle-1 {
+  position: absolute;
+  width: 390px;
+  height: 67px;
+  left: -26px;
+  right: 0;
+  top: -64%;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+
+  background: #31394d;
+  border-radius: 20px;
+  transform: rotate(-2.32deg);
+}
+
+.rectangle-2 {
+  position: absolute;
+  width: 325px;
+  height: 85.23px;
+  left: -85px;
+  right: 0;
+  top: -65%;
+  bottom: 0;
+  margin: auto;
+  z-index: -2;
+  background: #4f5565;
+  border-radius: 20px;
+  transform: rotate(-4.48deg);
+}
+
+.author-name {
+  position: absolute;
+  width: 175px;
+  height: 20px;
+  color: #252e42;
+  left: 0;
+  right: 0;
+  top: 56%;
+  bottom: 0;
+  margin: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-container-text {
+  margin: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+button {
+  background: #ff8469;
+  color: white;
+  border-radius: 7px;
+  font-size: 14px;
+  width: 54px;
+  height: 27px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d95133;
+}
+
+.todos-container {
+  display: flex;
+  flex-direction: column;
+  width: 385px;
+  margin-top: 20px;
+  gap: 9px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+}
+
+.todo-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+  gap: 3px;
+}
+
+.todo-title {
+  color: white;
+  line-height: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.todo-description {
+  color: rgb(79, 85, 101);
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 360px;
+}
+
+.faderflow {
+  overflow: hidden;
+  white-space: nowrap;
+
+  background: linear-gradient(
+    to right,
+    rgb(79, 85, 101) 70%,
+    rgb(79 85 101 / 5%) 100%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff0;
+}
+
+/* Custom checkbox */
+.custom-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #4f5565;
+  border-radius: 6px;
+  min-width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 6px;
+  background: #4f5565;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-width: 0 2px 2px 0;
+  left: 6px;
+  top: 2px;
+}
+/* Custom checkbox */
+
+@media only screen and (max-width: 450px) {
+  .card-container {
+    width: 310px;
+    height: 480px;
+  }
+
+  .todos-container {
+    width: 340px;
+  }
+
+  .rectangle-1 {
+    width: 342px;
+  }
+
+  .rectangle-2 {
+    width: 280px;
+  }
 }
