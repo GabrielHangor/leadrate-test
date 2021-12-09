@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/leadrate-test/static/css/main.b2513062.chunk.css",
+    "main.js": "/leadrate-test/static/js/main.e9877a13.chunk.js",
+    "main.js.map": "/leadrate-test/static/js/main.e9877a13.chunk.js.map",
+    "runtime-main.js": "/leadrate-test/static/js/runtime-main.df02d377.js",
+    "runtime-main.js.map": "/leadrate-test/static/js/runtime-main.df02d377.js.map",
+    "static/js/2.a85dfcbe.chunk.js": "/leadrate-test/static/js/2.a85dfcbe.chunk.js",
+    "static/js/2.a85dfcbe.chunk.js.map": "/leadrate-test/static/js/2.a85dfcbe.chunk.js.map",
+    "index.html": "/leadrate-test/index.html",
+    "static/css/main.b2513062.chunk.css.map": "/leadrate-test/static/css/main.b2513062.chunk.css.map",
+    "static/js/2.a85dfcbe.chunk.js.LICENSE.txt": "/leadrate-test/static/js/2.a85dfcbe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df02d377.js",
+    "static/js/2.a85dfcbe.chunk.js",
+    "static/css/main.b2513062.chunk.css",
+    "static/js/main.e9877a13.chunk.js"
+  ]
+}
